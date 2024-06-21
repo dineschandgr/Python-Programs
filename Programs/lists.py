@@ -18,3 +18,16 @@ for i in range(0,len(fruits)):
         continue
     print(fruits[i])
 
+
+vehicle = [ ["Kia","Hyundai"], "Truck", "Bus" ]
+print(vehicle)
+
+for ele in vehicle:
+    print(ele)
+
+for i in range(0,len(vehicle)):
+    if i == 0:
+        car = vehicle[0]
+        print( "1st {} 2nd {}".format(car[0], car[1]))
+    else:
+        print(vehicle[i])
