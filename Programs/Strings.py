@@ -54,15 +54,8 @@ age = 36
 txt = f"My name is John, I am {age}"
 print(txt)
 
-stack = []
-
-for i in str:
-    stack.append(i)
-
-while stack:
-    print(stack.pop())
+age = 10
+print("hello ", 1,"world ", 2)
+print("hello {} world {} ".format(1,2))
 
 
-s=str.split(" ")
-
-print(s)
