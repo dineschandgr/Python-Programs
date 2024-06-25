@@ -1,4 +1,4 @@
-fruits = ("apple", "banana", "cherry")
+fruits = ("apple", "banana", "cherry", 10)
 
 print(fruits)
 
@@ -36,16 +36,20 @@ thistuple += y
 print(thistuple)
 
 #unpack tuples
-(green, yellow, red) = fruits
+(green, yellow, red, num) = fruits
 
 print(green)
 print(yellow)
 print(red)
+print("num ",num)
 
 fruits = ("apple", "mango", "papaya", "pineapple", "cherry")
 
 #using asterisk
 (green, yellow, *red) = fruits
+
+print("green ",type(green))
+print("red type ",type(red))
 (green, *tropic, red) = fruits
 
 print(green)

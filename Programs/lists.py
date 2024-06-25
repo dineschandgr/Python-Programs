@@ -41,8 +41,8 @@ for i in range(0,len(vehicle)):
 
 #sorting
 thislist = ["orange", "mango", "kiwi", "pineapple", "banana"]
-thislist.sort()
-print(thislist)
+thislist.sort(reverse=True)
+print("sort",thislist)
 
 #copying a list
 list1 = ["apple", "banana", "cherry"]
@@ -74,10 +74,12 @@ for x in list2:
   list1.append(x)
 
 print(list1)
+list1.count("apple")
 
 #remove element in a list
-list1.remove("banana")
+list1.remove("a")
 list1.pop(1)
 del list1[0]
-del list1
 list1.clear()
+del list1
+
