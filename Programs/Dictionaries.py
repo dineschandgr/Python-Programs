@@ -57,6 +57,7 @@ employeeDict = {
   "Age": 25,
   "address": ["billing", "residential", "office"]
 }
+print(employeeDict["address"][1])
 
 print(type(employeeDict))
 
@@ -68,9 +69,8 @@ print(employeeDict)
 
 employeeDict.update({"phone": 12345})
 
-
 #copy
-mewdict = employeeDict.copy()
+newdict = employeeDict.copy()
 newdict1 = dict(employeeDict)
 
 #remove

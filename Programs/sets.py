@@ -16,8 +16,6 @@ for i in range(0,len(setfruits)):
 for item in setfruits:
     print(item)
 
-
-
 #True=1
 #False=0
 set2 = {1,2,True,2,False,0,-1}
@@ -45,7 +43,7 @@ thisset = {"apple", "banana", "cherry"}
 mylist = ["kiwi", "orange"]
 
 thisset.update(mylist)
-print(thisset)
+print("this set ",thisset)
 
 #remove elements - cannot access any element by index
 thisset.remove("cherry")
@@ -81,14 +79,14 @@ set1 = {"apple", "banana", "cherry"}
 set2 = {"google", "microsoft", "apple"}
 
 set3 = set1.intersection(set2)
-print(set3)
+print("intersection ",set3)
 
 set3 = set1 & set2
 print(set3)
 
 #updates original set
 set1.intersection_update(set2)
-
+print("intersection update ",set1, set2)
 #difference
 set1 = {"apple", "banana", "cherry"}
 set2 = {"google", "microsoft", "apple"}
