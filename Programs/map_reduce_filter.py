@@ -16,7 +16,7 @@ def double(n):
 # Using map to double all numbers
 numbers = [5, 6, 7, 8]
 result = map(double, numbers)
-print(list(result))
+print("result ",list(result))
 
 fruits = ['apple', 'mango', 'orange', 'banana']
 capital_fruits = []
@@ -27,15 +27,16 @@ for fruit in fruits:
 
 print(capital_fruits)
 
-capital_fruits = list(map(str.upper, fruits))
-print(capital_fruits)
+capital_fruits = map(str.upper, fruits)
+print(list(capital_fruits))
 
 
 #map with lambda
 numbers1 = [1, 2, 3]
 numbers2 = [4, 5, 6]
+numbers3 = [4, 5, 6]
 
-result = map(lambda x, y: x + y, numbers1, numbers2)
+result = map(lambda x, y, z: x + y - z, numbers1, numbers2, numbers3)
 print(list(result))
 
 # List of strings
@@ -68,8 +69,8 @@ print(functools.reduce(operator.mul, lis))
 def starts_with_A(s):
     return s[0] == "A"
 
-fruit = ["Apple", "Banana", "Pear", "Apricot", "Orange"]
-filter_object = filter(starts_with_A, fruit)
+fruits = ["Apple", "Banana", "Pear", "Apricot", "Orange"]
+filter_object = filter(starts_with_A, fruits)
 
 print(list(filter_object))
 
