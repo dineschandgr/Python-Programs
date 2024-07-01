@@ -34,7 +34,7 @@ print(list(capital_fruits))
 #map with lambda
 numbers1 = [1, 2, 3]
 numbers2 = [4, 5, 6]
-numbers3 = [4, 5, 6]
+numbers3 = [7, 8, 9]
 
 result = map(lambda x, y, z: x + y - z, numbers1, numbers2, numbers3)
 print(list(result))
@@ -46,13 +46,11 @@ l = ['sat', 'bat', 'cat', 'mat']
 test = list(map(list, l))
 print(test)
 
+
+#Reduce
+
 # initializing list
 lis = [1, 3, 5, 6, 2]
-
-#filter
-#filter(function, iterable(s))
-
-
 
 # using reduce to compute sum of list
 print("The sum of the list elements is : ", end="")
@@ -66,12 +64,15 @@ print(functools.reduce(operator.add, lis))
 print(functools.reduce(operator.mul, lis))
 
 
+#filter
+#filter(function, iterable(s))
+
 def starts_with_A(s):
     return s[0] == "A"
 
 fruits = ["Apple", "Banana", "Pear", "Apricot", "Orange"]
 filter_object = filter(starts_with_A, fruits)
-
+print(type(filter_object))
 print(list(filter_object))
 
 
@@ -80,3 +81,11 @@ fruit = ["Apple", "Banana", "Pear", "Apricot", "Orange"]
 filter_object = filter(lambda s: s[0] == "A", fruit)
 
 print(list(filter_object))
+
+student = [30 , 40 , 44 , 50 , 60 , 80, 90, 97]
+
+pass_students = filter(lambda mark: mark > 50, student)
+print("pass students ", list(pass_students))
+
+o_students = filter(lambda mark: mark >= 90, student)
+print("O students ", list(o_students))

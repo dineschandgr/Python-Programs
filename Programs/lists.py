@@ -50,6 +50,9 @@ list2 = list1
 list2.append("a")
 print(list1)
 
+list1 = [10,20,30]
+print("sum ",sum(list1))
+
 list3 = list1.copy()
 list3.append("b")
 print(list1)
