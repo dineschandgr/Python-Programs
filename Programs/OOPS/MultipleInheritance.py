@@ -1,35 +1,49 @@
-class Mammal():
+class Vehicle():
+
+    #name = "vehicle"
 
     def __init__(self, name):
-        print(name, "Is a mammal")
+        self.name = name
+        print(name, "Is a vehicle")
+
+    def run(self):
+        print("vehicle can run")
 
 
-class canFly(Mammal):
+class Passenger(Vehicle):
 
-    def __init__(self, canFly_name):
-        print(canFly_name, "cannot fly")
+    def __init__(self, name):
+        print(name, "can carry people")
 
         # Calling Parent class
         # Constructor
-        super().__init__(canFly_name)
+        super().__init__(name)
+
+    def carry_passenger(self):
+        print("carry passengers", self.name)
 
 
-class canSwim(Mammal):
+class Luggage(Vehicle):
 
-    def __init__(self, canSwim_name):
-        print(canSwim_name, "cannot swim")
+    def __init__(self, name):
+        print("carry luggage", name)
+        self.name = name
 
-        super().__init__(canSwim_name)
+        super().__init__(name)
+
+    def carry_luggage(self):
+        print("carry luggage", self.name)
 
 
-class Animal(canFly, canSwim):
+class Truck(Passenger, Luggage):
 
     def __init__(self, name):
         super().__init__(name)
 
-
-
-Carol = Animal("Dog")
+vehicle = Vehicle("vehcile")
+truck = Truck("AshokLeyland")
+truck.run()
+truck.carry_luggage()
 
 
 #Hybrid Inheritance - Diamond Problem

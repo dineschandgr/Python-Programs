@@ -58,4 +58,7 @@ age = 10
 print("hello ", 1,"world ", 2)
 print("hello {} world {} ".format(1,2))
 
-
+s1 = "hello"
+s2 = "hello"
+print("s1 eq s2 ", s1.__eq__(s2))
+print("s1 == s2 ", s1 == s2)
