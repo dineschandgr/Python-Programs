@@ -1,25 +1,27 @@
 class Vehicle:
 
     #attributes of class. Attributes are always public
-    colour = "blue"
-    wheel = "4"
-    name = "vehicle"
+
 
     #contructor - called only once when object is created
     def __init__(self, c, w, n):
         self.colour = c
-        self.wheel = w
-        self.name = n
+        self._wheel = w
+        self.__name = n
 
     def run(self):
-        print("vehicle runs ",self.wheel, self.name, self.colour)
+        print("vehicle runs ",self._wheel, self.__name, self.colour)
 
 #object
-v = Vehicle("red","4","car")
+v = Vehicle("red",4,"car")
 v.run()
-
 
 v1 = Vehicle("brown",8,"truck")
 v1.run()
 
-print("vehicle colour ",Vehicle.colour)
+v1.name = "aaa"
+v1.run()
+
+v1.name = "yellow"
+v1.run()
+#print("vehicle colour ",Vehicle.colour)

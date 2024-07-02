@@ -1,38 +1,54 @@
-class Mammal():
+class Vehicle(object):
 
-	def __init__(self, name):
-		print(name, "Is a mammal")
+    #name = "vehicle"
 
+    def __init__(self, name):
+        self.name = name
+        print(name, "Is a vehicle")
 
-class canFly(Mammal):
+    def run(self):
+        print("vehicle can run")
 
-	def __init__(self, canFly_name):
-		print(canFly_name, "cannot fly")
+class test():
+    def __init__(self, test):
+        self.test = test
+        print("test class constructor ",test)
 
-		# Calling Parent class
-		# Constructor
-		super().__init__(canFly_name)
+class Passenger(Vehicle):
 
+    def __init__(self, name):
+        print(name, "can carry people")
 
-class canSwim(canFly):
+        # Calling Parent class
+        # Constructor
+        super().__init__(name)
 
-	def __init__(self, canSwim_name):
-
-		print(canSwim_name, "cannot swim")
-
-		super().__init__(canSwim_name)
-
-
-class Animal(canSwim):
-
-	def __init__(self, name):
-
-		# Calling the constructor
-		# of both the parent
-		# class in the order of
-		# their inheritance
-		super().__init__(name)
+    def carry_passenger(self):
+        print("carry passengers", self.name)
 
 
-# Driver Code
-Carol = Animal("Dog")
+class HeavyDuty(Vehicle):
+
+    def __init__(self, name):
+        print("carry luggage constructor", name)
+        self.name = name
+
+        super().__init__(name)
+
+    def carry_luggage(self):
+        print("carry luggage", self.name)
+
+
+class Truck(Passenger, HeavyDuty, test):
+
+    def __init__(self, name):
+        super().__init__(name)
+
+vehicle = Vehicle("vehicle")
+passenger = Passenger("passenger")
+heavy_duty = HeavyDuty("heavyduty")
+truck = Truck("truck")
+truck.run()
+truck.carry_luggage()
+print("method resolution order",Truck.mro())
+print("method resolution order",Vehicle.mro())

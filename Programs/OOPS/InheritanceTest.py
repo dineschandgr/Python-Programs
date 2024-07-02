@@ -22,6 +22,7 @@ class Test(Vehicle):
 
 # child class
 class Car(Vehicle):
+
     def __init__(self, name, colour, type, wheel):
         self.type = type
         self.wheel = wheel
