@@ -45,6 +45,7 @@ vehicle1.colour = "green"
 
 print("vehicle eq vehicle1 ",vehicle.__eq__(vehicle1))
 
+
 vehicle.colour = "blue"
 print("vehicle ",vehicle)
 del vehicle.colour
