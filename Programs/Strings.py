@@ -60,5 +60,14 @@ print("hello {} world {} ".format(1,2))
 
 s1 = "hello"
 s2 = "hello"
+s3 = "hello1"
+
+#to compare values inside the string
 print("s1 eq s2 ", s1.__eq__(s2))
+
+#to compare the memory location of the strings
 print("s1 == s2 ", s1 == s2)
+
+print("s1 eq s3 ", s1.__eq__(s3))
+
+print("s1 == s3 ", s1 == s3)
