@@ -65,9 +65,10 @@ s3 = "hello1"
 #to compare values inside the string
 print("s1 eq s2 ", s1.__eq__(s2))
 
-#to compare the memory location of the strings
+#to compare the values of the strings
 print("s1 == s2 ", s1 == s2)
 
+#to compare the memory location of the strings
 print("s1 is s2",s1 is s2)
 
 print("s1 eq s3 ", s1.__eq__(s3))

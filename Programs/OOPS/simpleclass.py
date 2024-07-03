@@ -32,6 +32,7 @@ print("v ",v)
 v1 = Vehicle("red",4,"car")
 
 v1.run()
+v = v1
 print("v is v1 ", v is v1)
 
 print("v == v1 ", v == v1)
