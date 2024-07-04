@@ -1,6 +1,12 @@
 print("hello world")
 
-print("enter a value")
+print("enter 1st value")
 
-input = input()
-print("input is ",input)
+n1 = input()
+
+print("enter 2nd value")
+
+n2 = input()
+
+sum = n1 + n2
+print("sum is ", sum)
