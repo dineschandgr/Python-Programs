@@ -1,8 +1,9 @@
-#Preferred Installer Program - PIP
+
+#Modules are Python code libraries you can include in your project.
 
 #A package contains all the files you need for a module.
 
-#Modules are Python code libraries you can include in your project.
+#Preferred Installer Program - PIP
 
 #pip --version
 

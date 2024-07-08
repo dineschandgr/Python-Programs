@@ -1,3 +1,7 @@
+import functions
+
+
+functions.my_function_1()
 fruits = ["Apple","Orange","Mango","Banana","Apple","Kiwi"]
 
 print(fruits[1])
