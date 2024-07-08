@@ -31,21 +31,27 @@ class Shape(ABC):
             pass
 
 class Circle(Shape):
+
     def __init__(self, radius):
         self.radius = radius
+
     def area(self):
-        return 3.14 * self.radius * self.radius
+        return 3.14 * self.radius ** 2
+
     def perimeter(self):
         return 2 * 3.14 * self.radius
 
 class Rectangle(Shape):
+
     def __init__(self, length, breadth):
         self.length = length
         self.breadth = breadth
+
     def area(self):
         return  self.length * self.breadth
+
     def perimeter(self):
-        return  (self.length +  self.breadth) * 2
+        return  2 * (self.length + self.breadth)
 
 def print_shape(shape):
     print(shape.area())
@@ -56,4 +62,5 @@ circle = Circle(10)
 print_shape(circle)
 
 rectange = Rectangle(10,20)
+rectange = circle
 print_shape(rectange)

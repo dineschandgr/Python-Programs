@@ -36,6 +36,8 @@ class Car(Vehicle):
         print("type: {}".format(self.type))
         print("wheel: {}".format(self.wheel))
 
+
+v = Vehicle("Vehicle", "Blue")
 # creation of an object variable or an instance
 a = Car('Ferrari', "red", "car", 4)
 

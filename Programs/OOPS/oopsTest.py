@@ -24,7 +24,9 @@ class Vehicle:
         return f"{self.colour}({self.wheel}) {self.name}"
 
 vehicle = Vehicle("green",3)
-print("vehicle ",vehicle)
+
+print("vehicle ",isinstance(vehicle,Vehicle))
+
 
 #class variables
 print(vehicle.__class__.colour)
