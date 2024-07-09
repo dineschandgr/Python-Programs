@@ -2,8 +2,7 @@
 from multipledispatch import dispatch
 
 class Employee:
-
-    __salary = 1000
+    __bonus = 0
 
     # constructor
     @dispatch(str)
@@ -39,14 +38,18 @@ class Employee:
          self.__salary = newsal
 
     def __str__(self) -> str:
-        return f"{self.__name}({self.__salary})"
+        return f"{self.__name}({self.__salary} {self.__bonus})"
 
 # creating object of a class
 emp = Employee('AAA')
+
+emp.salary = 3000000000
 print(emp.get_salary())
 
 emp1 = Employee('James', 100000)
 print(emp1.get_salary())
+emp1.name = "hello"
+print(emp1)
 
 emp1.add_salary(15000.01)
 print(emp1.get_salary())
