@@ -1,5 +1,6 @@
 str = "Hello World Welcome"
 
+print("string is ",str)
 # accessing the character of str at 0th index
 print("index 0 is ",str[0])
 
@@ -17,17 +18,17 @@ print(str[-5])
 str1 = str[: 3]
 print("str1 ",str1)
 
-print(str[: 3])
+print("slice ",str[2: 3])
 
 str2 = str[1 : 5 : 2]
 print("str 2", str2)
 
-print(str[1 : 5 : 2])
+print("slice 2 ", str[0 : 5 : 2])
 
 str3 = str[-1 : -12 : -2]
-print("str3 ", str3)
+print("reverse slice 1", str3)
 
-print(str[-1 : -12 : -2])
+print("reverse slice 2",str[-1 : -12 : -2])
 
 str5 = "HeLLo"
 print("upper ",str5.upper())
