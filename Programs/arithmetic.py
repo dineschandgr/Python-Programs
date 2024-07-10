@@ -1,9 +1,9 @@
 print("hello world")
 
-a = 3
-b = 2
-c = a + b
-print(a > b)
+A = 3
+B = 2
+C = A + B
+print(A > B)
 
 
 list = ["hello","world"]
@@ -14,10 +14,10 @@ print("test in operator ", list1 in list)
 print("test is operator ", list1 is list)
 print("list2 = list ", list2 is list)
 
-print("value ",not((a > b) and (c > b) and (c < a)))
+print("value ",not((A > B) and (C > B) and (C < A)))
 
-count = 0
-while (count == 0):
+COUNT = 0
+while (COUNT == 0):
     i = int(input("Enter a value greater than 100"))
     if i > 100:
         print("success")

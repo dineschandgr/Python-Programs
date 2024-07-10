@@ -1,6 +1,8 @@
 str = "Hello World Welcome"
 
+
 print("string is ",str)
+print("len of string is ",len(str))
 # accessing the character of str at 0th index
 print("index 0 is ",str[0])
 
@@ -26,6 +28,9 @@ print("str 2", str2)
 print("slice 2 ", str[0 : 5 : 2])
 
 str3 = str[-1 : -12 : -2]
+
+str = "Hello World Welcome"
+
 print("reverse slice 1", str3)
 
 print("reverse slice 2",str[-1 : -12 : -2])
@@ -75,3 +80,7 @@ print("s1 is s2",s1 is s2)
 print("s1 eq s3 ", s1.__eq__(s3))
 
 print("s1 == s3 ", s1 == s3)
+
+
+splitstr = str.split( ' ')
+print(splitstr)

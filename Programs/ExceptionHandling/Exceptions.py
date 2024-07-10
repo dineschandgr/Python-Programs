@@ -1,15 +1,16 @@
 #The try block will generate an exception, because x is not defined:
 try:
   print(x)
-except:
-  print("An exception occurred")
+except Exception as e:
+  #print("An exception occurred ",e.with_traceback())
+  print("An exception occurred ",e)
 
 
 
 try:
   10 / 0
-except:
-  print("divide by 0 error")
+except Exception as e:
+  print("divide by 0 error : ", e)
 
 
 #multiple exceptions
@@ -17,8 +18,8 @@ print("enter a divisor")
 a = int (input())
 try:
   10 / a
-except ZeroDivisionError:
-  print("divide by 0 error")
+except ZeroDivisionError as ze:
+  print("divide by 0 error : ", ze)
 else:
   print("other error")
 
@@ -36,8 +37,8 @@ try:
   f = open("demofile.txt")
   try:
     f.write("Hello World")
-  except:
-    print("Something went wrong when writing to the file")
+  except Exception as e:
+    print("Something went wrong when writing to the file : ",e)
   finally:
     print("finally always works")
     f.close()

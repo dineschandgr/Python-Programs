@@ -19,7 +19,7 @@ try:
   if not type(x) is int:
     raise TypeError("Only integers are allowed")
 except TypeError as e:
-  print("Typo Error", repr(e))
+  print("Type Error", repr(e))
 except Exception as e:
   print(f"Caught error: {repr(e)}")
 
@@ -46,19 +46,6 @@ except Exception as e:
 
 #Custom Exception Class
 
-class MyValueError(ValueError):
-  """ Raise when a custom value error occurs."""
-
-
-def divide_by_zero():
-  return 1 / 0  # will fail and raise a ZeroDivisionError
-
-  class MyValueError(ValueError):
-    """ Raise when a custom value error occurs."""
-
-
-def divide_by_zero():
-  return 1 / 0  # will fail and raise a ZeroDivisionError
 
 class MyValueError(ValueError):
     """ Raise when a custom value error occurs."""
@@ -70,7 +57,6 @@ def divide_by_zero():
 
 try:
   raise MyValueError("My custom exception.")
-  divide_by_zero()
 except MyValueError as e:
   print(f"Caught custom value error: {repr(e)}")
 except ValueError as e:
@@ -85,6 +71,6 @@ def example():
   except ValueError as e:
     raise RuntimeError('A parsing error occurred') from e
 
-example()
+
 
 
