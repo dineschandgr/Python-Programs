@@ -1,3 +1,12 @@
+for x in range(1, 101):
+  print(x)
+
+i = 1
+while i < 101:
+  print(i)
+  i += 1
+
+
 l = ["geeks", "for", "geeks"]
 
 for i in l:
