@@ -1,6 +1,5 @@
 from abc import ABC, abstractmethod
 
-
 class democlass(ABC):
     @abstractmethod
     def method1(self):
@@ -61,6 +60,6 @@ def print_shape(shape):
 circle = Circle(10)
 print_shape(circle)
 
-rectange = Rectangle(10,20)
-rectange = circle
-print_shape(rectange)
+rectangle = Rectangle(10,20)
+rectangle = circle
+print_shape(rectangle)

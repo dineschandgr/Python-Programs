@@ -84,3 +84,11 @@ print("s1 == s3 ", s1 == s3)
 
 splitstr = str.split( ' ')
 print(splitstr)
+
+str = "welcome"
+
+reverse = ""
+
+
+
+
