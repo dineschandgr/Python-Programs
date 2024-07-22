@@ -12,11 +12,22 @@ print("reverse ",reverse)
 
 for i in str:
     print("foreach loop ",i)
+else:
+    print("for else")
 
 i = 1
 while i < 101:
-  print(i)
+  print("while loop ",i)
   i += 1
+else:
+    print("break")
+
+while True:
+    print("Enter a input between 1 to 100 ")
+    int1 = int(input())
+    if int1 > 1 and int1 < 101:
+        print("input ", int1)
+        break
 
 
 l = ["geeks", "for", "geeks"]

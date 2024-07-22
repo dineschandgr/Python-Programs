@@ -81,7 +81,6 @@ for x in list2:
   list1.append(x)
 
 print(list1)
-list1.count("apple")
 
 #remove element in a list
 list1.remove("a")
