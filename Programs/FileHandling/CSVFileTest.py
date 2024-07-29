@@ -1,7 +1,6 @@
 import csv
 from pathlib import Path
 
-
 def main():
     print("Script Started")
     data = []
