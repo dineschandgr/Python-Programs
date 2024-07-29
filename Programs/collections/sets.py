@@ -24,20 +24,23 @@ print(set2)
 print(len(set2))
 print(type(set2))
 
-list1 = ["apple","mango","banana"]
+list1 = ["apple","mango","banana","apple"]
 set3 = set(list1)
-print(set3)
+print("set 3 ",set3)
+list1 = list(set3)
+print("list1 ",list1)
 
 print("banana" in set3)
 
-print("strwaberry" not in set3)
+print("strawberry" not in set3)
 
 #adding element to set
 set3.add("blueberry")
 
+set4 = {"orange"}
 #adding a set to set
-set3.update(set1)
-
+set3.update(set4)
+print("updated set 3",set3)
 #adding any iterable to set
 thisset = {"apple", "banana", "cherry"}
 mylist = ["kiwi", "orange"]
@@ -55,13 +58,13 @@ del thisset
 
 #union
 set1 = {"a", "b", "c"}
-set2 = {1, 2, 3}
+set2 = {1, 2, 3, "a"}
 
-set3 = set1.union(set2)
-print(set3)
+set3 = set1 | (set2)
+print("union ",set3)
 
-set3 = set1 | set2
-print(set3)
+set3 = set1 & set2
+print("intersection ",set3)
 
 set3 = {"apple", "bananas", "cherry"}
 
