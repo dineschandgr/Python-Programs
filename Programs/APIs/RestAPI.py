@@ -38,6 +38,7 @@ def getObjectById(id):
     response = requests.get(url)
     return response.json()
 
+print("get response ",getAllObjects())
 response = createObject().json();
 id = response['id']
 print("id ",id)
