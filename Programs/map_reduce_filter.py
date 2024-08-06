@@ -15,6 +15,12 @@ def double(n):
 
 # Using map to double all numbers
 numbers = [5, 6, 7, 8]
+
+result_list = []
+for i in numbers:
+    result_list.append(double(i))
+
+print("result is ",result_list)
 result = map(double, numbers)
 print("result ",list(result))
 
@@ -31,7 +37,16 @@ capital_fruits = map(str.upper, fruits)
 print(list(capital_fruits))
 
 
+def lambda_test(str):
+    return str.upper()
+
+#lambda
+x = lambda string: string.upper()
+print("lambda output ", x("hello"))
+
+
 #map with lambda
+
 numbers1 = [1, 2, 3]
 numbers2 = [4, 5, 6]
 numbers3 = [7, 8, 9]

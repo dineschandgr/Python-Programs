@@ -1,19 +1,20 @@
-class Geek:
-    # protected data members
-    _name = "R2J"
-    _roll = 1706256
+class Vehicle:
 
-    # public member function
-    def displayNameAndRoll(self):
+    #attributes
+    wheel = 4
+    colour = "red"
+    # behaviour
+    def run(self):
         # accessing protected data members
-        print("Name: ", self._name)
-        print("Roll: ", self._roll)
+        print("Name: ", self.wheel)
+        print("Colour: ", self.colour)
 
     # creating objects of the class
 
 
-obj = Geek()
-
+obj = Vehicle()
+obj.run()
 # calling public member
 # functions of the class
-obj.displayNameAndRoll()
+obj1 = Vehicle()
+obj1.run()

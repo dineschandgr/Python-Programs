@@ -27,11 +27,6 @@ vehicle = Vehicle("green",3)
 
 print("vehicle ",isinstance(vehicle,Vehicle))
 
-
-#class variables
-print(vehicle.__class__.colour)
-print(vehicle.__class__.wheel)
-
 #instance variables
 print(vehicle.colour)
 print(vehicle.wheel)
@@ -47,7 +42,6 @@ vehicle1.colour = "green"
 
 print("vehicle eq vehicle1 ",vehicle.__eq__(vehicle1))
 
-
 vehicle.colour = "blue"
 print("vehicle ",vehicle)
 del vehicle.colour
@@ -55,3 +49,7 @@ print("vehicle ",vehicle)
 del vehicle
 #print("vehicle ",vehicle)
 
+
+#class variables
+print(vehicle.__class__.colour)
+print(vehicle.__class__.wheel)
