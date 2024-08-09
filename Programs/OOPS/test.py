@@ -11,7 +11,6 @@ class Vehicle:
 
     # creating objects of the class
 
-
 obj = Vehicle()
 obj.run()
 # calling public member
