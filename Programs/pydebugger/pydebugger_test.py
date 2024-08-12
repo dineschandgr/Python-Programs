@@ -10,4 +10,4 @@ y = input("Enter second number : ")
 sum = addition(x, y)
 print(sum)
 
-#python -m pdb pydebugger_test.py from console
+#python pydebugger_test.py from console
