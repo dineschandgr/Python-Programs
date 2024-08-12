@@ -1,5 +1,5 @@
 # import the date class
-from datetime import date, datetime
+from datetime import date
 
 my_date = date(1996, 12, 11)
 

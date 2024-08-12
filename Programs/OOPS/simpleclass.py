@@ -2,8 +2,7 @@ class Vehicle:
 
     #attributes of class. Attributes are always public
 
-
-    #contructor - called only once when object is created
+    #constructor - called only once when object is created
     def __init__(self, c, w, n):
         self.colour = c
         self._wheel = w

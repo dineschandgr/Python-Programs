@@ -22,5 +22,6 @@ for page in range(1, 3, 1):
 
 print(element_list)
 
+
 #closing the driver
 driver.close()

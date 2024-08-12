@@ -21,12 +21,19 @@ def main():
             count = count + 1
             data.append(row)
 
-        myfile = Path('output.csv')
+        myfile = Path('output1.csv')
         with open(myfile, 'w') as csv_file_output:
             writer = csv.writer(csv_file_output)
+            count = 0
             for each in data:
-                writer.writerow(each)
-
+                if count == 0:
+                  header = []
+                  header.append("one")
+                  header.append("two")
+                  writer.writerow(header)
+                else:
+                    writer.writerow(each)
+                count += 1
         print("Script Completed")
 
 
