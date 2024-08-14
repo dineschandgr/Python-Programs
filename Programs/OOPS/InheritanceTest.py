@@ -41,10 +41,10 @@ v = Vehicle("Vehicle", "Blue")
 # creation of an object variable or an instance
 a = Car('Ferrari', "red", "car", 4)
 
-# calling a function of the class Person using
+# calling a function of the class Vehicle using
 # its instance
 a.display()
 a.details()
 
-b = Test('Ferrari', "red")
+b = Test('Lamborghini', "yellow")
 b.details()

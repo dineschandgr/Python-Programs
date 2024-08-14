@@ -6,6 +6,9 @@ from webdriver_manager.chrome import ChromeDriverManager
 element_list = []
 
 options = webdriver.ChromeOptions()
+
+#to run in headless mode
+options.add_argument('--headless')
 ser = Service('/Users/dineshchandgeetharavichandran/Desktop/Dinesh/Selenium/Drivers/chromedriver')
 driver = webdriver.Chrome(service=ser,options=options)
 for page in range(1, 3, 1):

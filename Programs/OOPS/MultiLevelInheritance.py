@@ -11,7 +11,8 @@ class Vehicle(object):
 
 class Car(Vehicle):
 
-    def __init__(self, name):
+    def __init__(self, wheel, name ):
+        self.wheel = wheel;
         print(name, "can carry people")
 
         # Calling Parent class
@@ -23,16 +24,16 @@ class Car(Vehicle):
 
 class ElectricCar(Car):
 
-    def __init__(self, battery, name):
+    def __init__(self, battery,wheel, name):
         self.battery = battery
 
         # Calling Parent class
         # Constructor
-        super().__init__(name)
+        super().__init__(wheel, name)
 
     def run_ev(self):
-        print("ev ",self.name,self.battery)
+        print("ev ",self.name,self.battery, self.wheel)
 
-ev = ElectricCar("500kv","Comet")
+ev = ElectricCar("500kv",4,"Comet")
 ev.run()
 ev.run_ev()

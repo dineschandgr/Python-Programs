@@ -5,9 +5,9 @@ from dateutil import tz
 #
 # print("datetime.now() :", tz_string)
 
-NYC = tz.gettz('Europe / Berlin')
+Europe = tz.gettz('Europe/Berlin')
 dt1 = datetime(2022, 5, 21, 12, 0)
-dt2 = datetime(2022, 12, 21, 12, 0, tzinfo=NYC)
+dt2 = datetime(2022, 12, 21, 12, 0, tzinfo=Europe)
 
 print("Naive Object :", dt1.tzname())
 print("Aware Object :", dt2.tzname())
