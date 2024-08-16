@@ -13,11 +13,13 @@ class democlass(ABC):
 class concreteclass(democlass):
     def method1(self):
         super().method1()
-        return
+        print("child implementation of abstract")
+        return "hello"
 
 
 obj = concreteclass()
-obj.method1()
+str = obj.method1()
+print("response ",str)
 obj.method2()
 
 
@@ -35,7 +37,7 @@ class Circle(Shape):
         self.radius = radius
 
     def area(self):
-        return 3.14 * self.radius ** 2
+        return 3.14 * self.radius * self.radius
 
     def perimeter(self):
         return 2 * 3.14 * self.radius
