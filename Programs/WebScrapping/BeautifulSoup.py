@@ -11,7 +11,7 @@ print(r)
 
 # Parsing the HTML
 soup = BeautifulSoup(r.content, 'html.parser')
-#print(soup.prettify())
+print(soup.prettify())
 
 # s = soup.find('div', class_='col-lg-3')
 # content = soup.find( class_ = "wrapper" )
