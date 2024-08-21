@@ -9,7 +9,7 @@ options = webdriver.ChromeOptions()
 
 #to run in headless mode
 options.add_argument('--headless')
-ser = Service('/Users/dineshchandgeetharavichandran/Desktop/Dinesh/Selenium/Drivers/chromedriver')
+ser = Service('./chromedriver')
 driver = webdriver.Chrome(service=ser,options=options)
 for page in range(1, 3, 1):
 
